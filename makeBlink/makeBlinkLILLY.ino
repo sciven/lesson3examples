@@ -1,8 +1,9 @@
 int counter = 0;
+int pinNumber = 7;
 void setup() {
 
-  // initialize digital pin 12 as an output.
-  pinMode(7, OUTPUT);
+  // initialize digital pin  as an output.
+  pinMode(pinNumber, OUTPUT);
 
 }
 
@@ -19,9 +20,9 @@ void loop() {
 
 void make_blink(){
  
-      digitalWrite(7, HIGH);   // turn the LED on (HIGH is the voltage level)
+      digitalWrite(pinNumber, HIGH);   // turn the LED on (HIGH is the voltage level)
       delay(1000);              // wait for a second
-      digitalWrite(7, LOW);    // turn the LED off by making the voltage LOW
+      digitalWrite(pinNumber, LOW);    // turn the LED off by making the voltage LOW
       delay(1000);              // wait for a second
 
 }
